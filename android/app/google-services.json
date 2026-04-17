@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "438823579389",
+    "project_id": "academics-91250",
+    "storage_bucket": "academics-91250.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438823579389:android:5848a3247b410112661894",
+        "android_client_info": {
+          "package_name": "com.example.mfmcf_academics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438823579389-1nq2m161bgg0h8doefpa4ddpfckh7iri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqW5bD_YGdr3g4AyaXhZ8vs75aNuvFyLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438823579389-1nq2m161bgg0h8doefpa4ddpfckh7iri.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "438823579389-1u5odlvhiov1bl7c6gjhrhknlinj9lom.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mfmcfAcademics"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

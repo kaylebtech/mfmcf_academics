@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – MFMCF Academics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- ── Sidebar ────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="logo-icon">M</div>
+        <div class="sidebar-logo-text">
+          <h2>MFMCF Academics</h2>
+          <span>Admin Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-item active" data-section="overview">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Overview
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-label">Academic Content</div>
+        <div class="nav-item" data-section="documents">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          Upload Documents
+        </div>
+        <div class="nav-item" data-section="videos">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          Upload Videos
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-label">Spiritual</div>
+        <div class="nav-item" data-section="devotionals">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          Devotionals
+        </div>
+        <div class="nav-item" data-section="verse">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          Verse for the Day
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-label">Community</div>
+        <div class="nav-item" data-section="announcements">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+          Announcements
+        </div>
+        <div class="nav-item" data-section="programs">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Programs &amp; Events
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="admin-info">
+        <div class="admin-avatar" id="adminAvatar">A</div>
+        <div class="admin-details">
+          <div class="admin-name" id="adminName">Admin</div>
+          <div class="admin-role">Administrator</div>
+        </div>
+        <button class="logout-btn" id="logoutBtn" title="Sign Out">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── Main Content ─────────────────────────────── -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-btn" id="menuBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div>
+          <div class="page-title" id="pageTitle">Overview</div>
+          <div class="page-subtitle" id="pageSubtitle">Welcome to the admin portal</div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span id="currentDate" style="font-size:12px;color:var(--text-light)"></span>
+      </div>
+    </header>
+
+    <div class="content-area">
+
+      <!-- ══ OVERVIEW ═══════════════════════════════════════ -->
+      <section class="section active" id="section-overview">
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(231,84,128,0.1)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#E75480" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div><div class="stat-info"><h3 id="statDocs">—</h3><p>Documents</p></div></div>
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(52,152,219,0.1)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#3498DB" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div><div class="stat-info"><h3 id="statVids">—</h3><p>Videos</p></div></div>
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(46,204,113,0.12)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#1a9e52" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div><div class="stat-info"><h3 id="statDevs">—</h3><p>Devotionals</p></div></div>
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(243,156,18,0.12)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#c07c00" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg></div><div class="stat-info"><h3 id="statVerses">—</h3><p>Verses</p></div></div>
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(142,68,173,0.1)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#8E44AD" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg></div><div class="stat-info"><h3 id="statAnn">—</h3><p>Announcements</p></div></div>
+          <div class="stat-card"><div class="stat-icon" style="background:rgba(231,76,60,0.1)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#E74C3C" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div><div class="stat-info"><h3 id="statProgs">—</h3><p>Programs</p></div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><span class="card-title">Quick Actions</span></div>
+          <div class="card-body" style="display:flex;flex-wrap:wrap;gap:12px">
+            <button class="btn btn-primary" onclick="navigate('documents')">+ Upload Documents</button>
+            <button class="btn btn-primary" onclick="navigate('videos')">+ Upload Videos</button>
+            <button class="btn btn-secondary" onclick="navigate('devotionals')">+ Add Devotional</button>
+            <button class="btn btn-secondary" onclick="navigate('verse')">+ Add Verse</button>
+            <button class="btn btn-secondary" onclick="navigate('announcements')">+ New Announcement</button>
+            <button class="btn btn-secondary" onclick="navigate('programs')">+ New Program</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ DOCUMENTS ═══════════════════════════════════════ -->
+      <section class="section" id="section-documents">
+        <!-- Shared batch settings -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Batch Settings — apply to all files below</span>
+          </div>
+          <div class="card-body">
+            <div class="form-grid-4">
+              <div class="form-group">
+                <label>College *</label>
+                <select id="docCollege" onchange="updateDepts('docDept','docCollege')">
+                  <option value="">Select College</option>
+                  <option value="CHS">CHS – Health Sciences</option>
+                  <option value="CSET">CSET – Science, Eng &amp; Tech</option>
+                  <option value="JUPEB">JUPEB</option>
+                  <option value="ALL">All Colleges</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Department *</label>
+                <select id="docDept"><option value="">Select College first</option></select>
+              </div>
+              <div class="form-group">
+                <label>Level *</label>
+                <select id="docLevel">
+                  <option value="">Select Level</option>
+                  <option>100</option><option>200</option><option>300</option>
+                  <option>400</option><option>500</option><option>All Levels</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Semester</label>
+                <select id="docSemester">
+                  <option value="">N/A</option>
+                  <option>First Semester</option>
+                  <option>Second Semester</option>
+                  <option>Both Semesters</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drop zone -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Select / Drop Documents</span>
+            <span style="font-size:12px;color:var(--text-light)">PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, TXT</span>
+          </div>
+          <div class="card-body">
+            <div class="upload-zone" id="docDropZone">
+              <input type="file" id="docFileInput" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt">
+              <svg class="upload-zone-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+              <h3>Drag &amp; drop files here</h3>
+              <p>or <span class="browse-link">browse to choose files</span></p>
+            </div>
+            <div class="file-queue" id="docQueue"></div>
+            <div id="docUploadActions" style="display:none;margin-top:16px;gap:12px;align-items:center">
+              <button class="btn btn-primary" id="docUploadAllBtn" onclick="uploadAllDocs()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                Upload All to Firestore
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="clearDocQueue()">Clear Queue</button>
+              <span id="docQueueCount" style="font-size:13px;color:var(--text-medium)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Existing documents -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Existing Documents</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadDocs()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Title</th><th>Course</th><th>College</th><th>Dept</th><th>Level</th><th>Semester</th><th>Date</th><th></th></tr></thead>
+              <tbody id="docsTableBody"><tr class="loading-row"><td colspan="8"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ VIDEOS ═══════════════════════════════════════════ -->
+      <section class="section" id="section-videos">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Batch Settings — apply to all videos below</span></div>
+          <div class="card-body">
+            <div class="form-grid-4">
+              <div class="form-group">
+                <label>College *</label>
+                <select id="vidCollege" onchange="updateDepts('vidDept','vidCollege')">
+                  <option value="">Select College</option>
+                  <option value="CHS">CHS – Health Sciences</option>
+                  <option value="CSET">CSET – Science, Eng &amp; Tech</option>
+                  <option value="JUPEB">JUPEB</option>
+                  <option value="ALL">All Colleges</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Department *</label>
+                <select id="vidDept"><option value="">Select College first</option></select>
+              </div>
+              <div class="form-group">
+                <label>Level *</label>
+                <select id="vidLevel">
+                  <option value="">Select Level</option>
+                  <option>100</option><option>200</option><option>300</option>
+                  <option>400</option><option>500</option><option>All Levels</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Semester</label>
+                <select id="vidSemester">
+                  <option value="">N/A</option>
+                  <option>First Semester</option>
+                  <option>Second Semester</option>
+                  <option>Both Semesters</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Select / Drop Videos</span>
+            <span style="font-size:12px;color:var(--text-light)">MP4, MOV, AVI, MKV, WEBM</span>
+          </div>
+          <div class="card-body">
+            <div class="upload-zone" id="vidDropZone">
+              <input type="file" id="vidFileInput" multiple accept="video/*">
+              <svg class="upload-zone-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <h3>Drag &amp; drop videos here</h3>
+              <p>or <span class="browse-link">browse to choose videos</span></p>
+            </div>
+            <div class="file-queue" id="vidQueue"></div>
+            <div id="vidUploadActions" style="display:none;margin-top:16px;gap:12px;align-items:center">
+              <button class="btn btn-primary" id="vidUploadAllBtn" onclick="uploadAllVids()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                Upload All to Firestore
+              </button>
+              <button class="btn btn-secondary btn-sm" onclick="clearVidQueue()">Clear Queue</button>
+              <span id="vidQueueCount" style="font-size:13px;color:var(--text-medium)"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Existing Videos</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadVids()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Title</th><th>Course</th><th>College</th><th>Dept</th><th>Level</th><th>Date</th><th></th></tr></thead>
+              <tbody id="vidsTableBody"><tr class="loading-row"><td colspan="7"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ DEVOTIONALS ════════════════════════════════════ -->
+      <section class="section" id="section-devotionals">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Add New Devotional</span></div>
+          <div class="card-body">
+            <form id="devForm" onsubmit="submitDevotional(event)">
+              <div class="form-grid">
+                <div class="form-group col-2">
+                  <label>Topic / Title *</label>
+                  <input type="text" id="devTopic" placeholder="e.g. Walking in Faith" required>
+                </div>
+                <div class="form-group col-2">
+                  <label>Creator Name *</label>
+                  <input type="text" id="devCreator" placeholder="e.g. Bro. Emmanuel">
+                </div>
+                <div class="form-group col-2">
+                  <label>Devotional Text *</label>
+                  <textarea id="devText" rows="6" placeholder="Write the devotional message here..." required style="min-height:160px"></textarea>
+                </div>
+              </div>
+              <div style="margin-top:4px">
+                <button type="submit" class="btn btn-primary" id="devSubmitBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                  <span id="devBtnText">Add Devotional</span>
+                  <div id="devBtnLoader" class="btn-loader hidden"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">All Devotionals</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadDevotionals()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Topic</th><th>Creator</th><th>Preview</th><th>Date</th><th></th></tr></thead>
+              <tbody id="devsTableBody"><tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ VERSE FOR THE DAY ═══════════════════════════════ -->
+      <section class="section" id="section-verse">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Add Verse for the Day</span></div>
+          <div class="card-body">
+            <form id="verseForm" onsubmit="submitVerse(event)">
+              <div class="form-grid">
+                <div class="form-group col-2">
+                  <label>Verse Text *</label>
+                  <textarea id="verseText" rows="4" placeholder="e.g. For God so loved the world that he gave his one and only Son..." required></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Reference *</label>
+                  <input type="text" id="verseRef" placeholder="e.g. John 3:16" required>
+                </div>
+                <div class="form-group">
+                  <label>Translation</label>
+                  <select id="verseTrans">
+                    <option>NIV</option><option>KJV</option><option>NLT</option>
+                    <option>ESV</option><option>NKJV</option><option>World English Bible</option>
+                    <option>Amplified Bible</option><option>MSG</option>
+                  </select>
+                </div>
+              </div>
+              <div style="margin-top:4px">
+                <button type="submit" class="btn btn-primary" id="verseSubmitBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                  <span id="verseBtnText">Add Verse</span>
+                  <div id="verseBtnLoader" class="btn-loader hidden"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">All Verses</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadVerses()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Reference</th><th>Translation</th><th>Verse Preview</th><th>Date</th><th></th></tr></thead>
+              <tbody id="versesTableBody"><tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ ANNOUNCEMENTS ═══════════════════════════════════ -->
+      <section class="section" id="section-announcements">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Add New Announcement</span></div>
+          <div class="card-body">
+            <form id="annForm" onsubmit="submitAnnouncement(event)">
+              <div class="form-grid">
+                <div class="form-group col-2">
+                  <label>Title *</label>
+                  <input type="text" id="annTitle" placeholder="Announcement title" required>
+                </div>
+                <div class="form-group col-2">
+                  <label>Message *</label>
+                  <textarea id="annMessage" rows="5" placeholder="Write your announcement here..." required></textarea>
+                </div>
+                <div class="form-group" style="display:flex;align-items:center;gap:12px;padding-top:22px">
+                  <label class="toggle">
+                    <input type="checkbox" id="annPublished" checked>
+                    <span class="toggle-track"></span>
+                  </label>
+                  <span style="font-size:14px;font-weight:500;color:var(--text-dark)">Publish immediately</span>
+                </div>
+              </div>
+              <div style="margin-top:12px">
+                <button type="submit" class="btn btn-primary" id="annSubmitBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                  <span id="annBtnText">Publish Announcement</span>
+                  <div id="annBtnLoader" class="btn-loader hidden"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">All Announcements</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadAnnouncements()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Title</th><th>Preview</th><th>Status</th><th>Date</th><th></th></tr></thead>
+              <tbody id="annTableBody"><tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ PROGRAMS ═══════════════════════════════════════ -->
+      <section class="section" id="section-programs">
+        <div class="card">
+          <div class="card-header"><span class="card-title">Add New Program / Event</span></div>
+          <div class="card-body">
+            <form id="progForm" onsubmit="submitProgram(event)">
+              <div class="form-grid">
+                <div class="form-group col-2">
+                  <label>Program Title *</label>
+                  <input type="text" id="progTitle" placeholder="e.g. Annual Bible Study Conference" required>
+                </div>
+                <div class="form-group">
+                  <label>Type *</label>
+                  <select id="progType">
+                    <option value="FELLOWSHIP">Fellowship</option>
+                    <option value="WORKSHOP">Workshop</option>
+                    <option value="SEMINAR">Seminar</option>
+                    <option value="PRAYER">Prayer Meeting</option>
+                    <option value="CONFERENCE">Conference</option>
+                    <option value="OUTREACH">Outreach</option>
+                    <option value="BIBLE_STUDY">Bible Study</option>
+                    <option value="CONCERT">Concert / Praise Night</option>
+                    <option value="OTHER">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Location *</label>
+                  <input type="text" id="progLocation" placeholder="e.g. UNIOSUN Chapel" required>
+                </div>
+                <div class="form-group">
+                  <label>Date *</label>
+                  <input type="date" id="progDate" required>
+                </div>
+                <div class="form-group">
+                  <label>Start Time</label>
+                  <input type="time" id="progStart">
+                </div>
+                <div class="form-group">
+                  <label>End Time</label>
+                  <input type="time" id="progEnd">
+                </div>
+                <div class="form-group col-2">
+                  <label>Description</label>
+                  <textarea id="progDesc" rows="4" placeholder="Describe the program..."></textarea>
+                </div>
+
+                <!-- Banner upload -->
+                <div class="form-group col-2">
+                  <label>Banner Image (optional)</label>
+                  <div class="upload-zone" id="bannerZone" style="padding:20px">
+                    <input type="file" id="bannerInput" accept="image/*" style="opacity:0;position:absolute;inset:0;width:100%;height:100%;cursor:pointer">
+                    <p style="margin:0;font-size:13px;color:var(--text-light)">Click or drag to upload a banner image (JPG, PNG, WebP)</p>
+                  </div>
+                  <div id="bannerPreview" style="display:none" class="banner-preview"></div>
+                </div>
+
+                <div class="form-group" style="display:flex;align-items:center;gap:12px;padding-top:22px">
+                  <label class="toggle">
+                    <input type="checkbox" id="progPublished" checked>
+                    <span class="toggle-track"></span>
+                  </label>
+                  <span style="font-size:14px;font-weight:500;color:var(--text-dark)">Publish immediately</span>
+                </div>
+              </div>
+              <div style="margin-top:12px">
+                <button type="submit" class="btn btn-primary" id="progSubmitBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                  <span id="progBtnText">Save Program</span>
+                  <div id="progBtnLoader" class="btn-loader hidden"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">All Programs</span>
+            <button class="btn btn-secondary btn-sm" onclick="loadPrograms()">Refresh</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Title</th><th>Type</th><th>Date</th><th>Location</th><th>Status</th><th></th></tr></thead>
+              <tbody id="progsTableBody"><tr class="loading-row"><td colspan="6"><div class="spinner"></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /content-area -->
+  </main>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal-overlay" id="deleteModal">
+  <div class="modal">
+    <h3>⚠ Confirm Delete</h3>
+    <p id="deleteModalMsg">Are you sure you want to delete this item? This action cannot be undone.</p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeDeleteModal()">Cancel</button>
+      <button class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Mobile sidebar overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+<script type="module">
+import { initializeApp }                      from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+import { getAuth, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js';
+import {
+  getFirestore, collection, addDoc, getDocs, deleteDoc,
+  doc, getDoc, updateDoc, serverTimestamp, query, orderBy, limit,
+  getCountFromServer
+} from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
+
+// ── Firebase init ────────────────────────────────────
+const app  = initializeApp({
+  apiKey: 'AIzaSyBK-hI3KNpsecXtDy9nLpgjN235gOoDKXs',
+  authDomain: 'academics-91250.firebaseapp.com',
+  projectId: 'academics-91250',
+  storageBucket: 'academics-91250.firebasestorage.app',
+  messagingSenderId: '438823579389',
+  appId: '1:438823579389:web:d6dc928706665de9661894',
+  measurementId: 'G-N6SKK48CX1'
+});
+const auth = getAuth(app);
+const db   = getFirestore(app);
+
+// ── Auth guard ───────────────────────────────────────
+onAuthStateChanged(auth, async (user) => {
+  if (!user) { window.location.replace('index.html'); return; }
+  const snap = await getDoc(doc(db, 'users', user.uid));
+  if (!snap.exists() || snap.data().role !== 'admin') {
+    await signOut(auth);
+    window.location.replace('index.html');
+    return;
+  }
+  const name = snap.data().fullName || snap.data().username || user.email;
+  document.getElementById('adminName').textContent = name;
+  document.getElementById('adminAvatar').textContent = name.charAt(0).toUpperCase();
+  loadOverviewStats();
+  loadDocs(); loadVids(); loadDevotionals(); loadVerses(); loadAnnouncements(); loadPrograms();
+});
+
+document.getElementById('logoutBtn').addEventListener('click', async () => {
+  await signOut(auth);
+  window.location.replace('index.html');
+});
+
+// ── Constants ────────────────────────────────────────
+const CLOUDINARY_CLOUD = 'drzomrby0';
+const CLOUDINARY_PRESET = 'academics';
+
+const COLLEGES = {
+  CHS: {
+    label: 'College of Health Sciences (CHS)',
+    depts: [
+      'B. Health Information Management','B. Environmental Health Science','M.B.B.S.',
+      'B.Sc. Nursing','B.Sc. Physiology','B.Sc. Public Health','B.MLS',
+      'B.Sc. Nutrition and Dietetics','B.Sc. Radiography and Radiation Science',
+      'B.Sc. Pharmacology','B.Sc. Anatomy','B.Sc. Biochemistry',
+      'B.Sc. Biotechnology','B.Sc. Microbiology'
+    ]
+  },
+  CSET: {
+    label: 'College of Science, Engineering & Technology (CSET)',
+    depts: [
+      'B.Eng. Agric. Engineering','B.Eng. Chemical Engineering','B.Eng. Civil Engineering',
+      'B.Eng. Electrical/Electronics','B.Eng. Mechanical Engineering','B.Sc. Computer Science',
+      'B.Sc. Cybersecurity','B.Sc. Information Science','B.Sc. Software Engineering',
+      'B.Sc. Information Technology','B.Sc. Statistics','B.Sc. Mathematics',
+      'B.Sc. Physics with Electronics','B.Sc. Chemistry','B.Sc. Industrial Chemistry',
+      'B.Sc. Geology','B.Sc. Science Laboratory','B.Sc. Plant Biology',
+      'B.Sc. Animal and Environmental Biology','Industrial Mathematics','B.Sc. Building',
+      'B.Sc. Estate Management','B.Sc. Food Science & Tech.','B.Sc. Quantity Survey',
+      'B.Sc. Architecture','B.Sc. Urban & Regional Planning'
+    ]
+  },
+  JUPEB: {
+    label: 'JUPEB',
+    depts: ['Science','Arts','Social Sciences']
+  },
+  ALL: { label: 'All Colleges', depts: ['General / All Departments'] }
+};
+
+// ── Navigation ───────────────────────────────────────
+const sections = { overview:'Overview', documents:'Upload Documents', videos:'Upload Videos', devotionals:'Devotionals', verse:'Verse for the Day', announcements:'Announcements', programs:'Programs & Events' };
+const subtitles = { overview:'Welcome to the admin portal', documents:'Upload bulk documents by college, department & level', videos:'Upload bulk videos by college, department & level', devotionals:'Manage daily devotional content', verse:'Manage verses for the day', announcements:'Create and manage announcements', programs:'Manage programs and events' };
+
+function navigate(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('section-' + id).classList.add('active');
+  document.querySelector(`.nav-item[data-section="${id}"]`).classList.add('active');
+  document.getElementById('pageTitle').textContent = sections[id];
+  document.getElementById('pageSubtitle').textContent = subtitles[id];
+  closeSidebar();
+}
+window.navigate = navigate;
+
+document.querySelectorAll('.nav-item').forEach(el => {
+  el.addEventListener('click', () => navigate(el.dataset.section));
+});
+
+// ── Mobile sidebar ───────────────────────────────────
+document.getElementById('menuBtn').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+});
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarOverlay').classList.remove('open');
+}
+window.closeSidebar = closeSidebar;
+
+// ── Date display ─────────────────────────────────────
+document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-GB', { weekday:'short', day:'2-digit', month:'short', year:'numeric' });
+
+// ── Toast ────────────────────────────────────────────
+function toast(msg, type = 'success') {
+  const icons = { success:'✓', error:'✕', info:'ℹ' };
+  const el = document.createElement('div');
+  el.className = `toast toast-${type}`;
+  el.innerHTML = `<span>${icons[type]||'✓'}</span><span>${msg}</span>`;
+  document.getElementById('toastContainer').appendChild(el);
+  setTimeout(() => el.remove(), 4000);
+}
+
+// ── Delete modal ─────────────────────────────────────
+let _deleteFn = null;
+function confirmDelete(msg, fn) {
+  document.getElementById('deleteModalMsg').textContent = msg;
+  _deleteFn = fn;
+  document.getElementById('deleteModal').classList.add('open');
+}
+window.closeDeleteModal = function() {
+  document.getElementById('deleteModal').classList.remove('open');
+  _deleteFn = null;
+};
+document.getElementById('confirmDeleteBtn').addEventListener('click', async () => {
+  if (_deleteFn) { await _deleteFn(); closeDeleteModal(); }
+});
+document.getElementById('deleteModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('deleteModal')) closeDeleteModal();
+});
+
+// ── Format date ──────────────────────────────────────
+function fmtDate(ts) {
+  if (!ts) return '—';
+  const d = ts.toDate ? ts.toDate() : new Date(ts);
+  return d.toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
+}
+function truncate(str, n = 60) { return str && str.length > n ? str.slice(0, n) + '…' : str || ''; }
+
+// ── Dept dropdown updater ────────────────────────────
+function updateDepts(deptId, collegeId) {
+  const sel = document.getElementById(deptId);
+  const college = document.getElementById(collegeId).value;
+  sel.innerHTML = '';
+  if (!college || !COLLEGES[college]) {
+    sel.innerHTML = '<option value="">Select College first</option>';
+    return;
+  }
+  const allOpt = document.createElement('option');
+  allOpt.value = ''; allOpt.textContent = 'All Departments';
+  sel.appendChild(allOpt);
+  COLLEGES[college].depts.forEach(d => {
+    const o = document.createElement('option');
+    o.value = d; o.textContent = d;
+    sel.appendChild(o);
+  });
+}
+window.updateDepts = updateDepts;
+
+// ── File size formatter ──────────────────────────────
+function fmtSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024*1024) return (bytes/1024).toFixed(1) + ' KB';
+  return (bytes/(1024*1024)).toFixed(1) + ' MB';
+}
+
+// ── Cloudinary upload ────────────────────────────────
+function cloudinaryUpload(file, onProgress) {
+  return new Promise((resolve, reject) => {
+    const fd = new FormData();
+    fd.append('file', file);
+    fd.append('upload_preset', CLOUDINARY_PRESET);
+
+    let resource = 'raw';
+    if (file.type.startsWith('video/')) resource = 'video';
+    else if (file.type.startsWith('image/')) resource = 'image';
+
+    const xhr = new XMLHttpRequest();
+    xhr.upload.addEventListener('progress', e => {
+      if (e.lengthComputable) onProgress(Math.round(e.loaded / e.total * 100));
+    });
+    xhr.addEventListener('load', () => {
+      if (xhr.status === 200) {
+        resolve(JSON.parse(xhr.responseText).secure_url);
+      } else {
+        let errMsg = 'Upload failed';
+        try { errMsg = JSON.parse(xhr.responseText).error?.message || errMsg; } catch(_){}
+        reject(new Error(errMsg));
+      }
+    });
+    xhr.addEventListener('error', () => reject(new Error('Network error during upload')));
+    xhr.open('POST', `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD}/${resource}/upload`);
+    xhr.send(fd);
+  });
+}
+
+// ── Stats ─────────────────────────────────────────────
+async function loadOverviewStats() {
+  const counts = { statDocs:'Courses', statVids:'Videos', statDevs:'Devotional', statVerses:'VerseForTheDay', statAnn:'announcements', statProgs:'programs' };
+  for (const [elId, col] of Object.entries(counts)) {
+    try {
+      const snap = await getCountFromServer(collection(db, col));
+      document.getElementById(elId).textContent = snap.data().count;
+    } catch(_) { document.getElementById(elId).textContent = '—'; }
+  }
+}
+window.loadOverviewStats = loadOverviewStats;
+
+// ══════════════════════════════════════════════════════
+// ── DOCUMENTS ────────────────────────────────────────
+// ══════════════════════════════════════════════════════
+let docFiles = [];
+
+function setupDropZone(zoneId, inputId, files, queue, actions, countEl) {
+  const zone  = document.getElementById(zoneId);
+  const input = document.getElementById(inputId);
+
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+  zone.addEventListener('drop', e => {
+    e.preventDefault(); zone.classList.remove('drag-over');
+    addFiles([...e.dataTransfer.files], files, queue, actions, countEl);
+  });
+  input.addEventListener('change', () => {
+    addFiles([...input.files], files, queue, actions, countEl);
+    input.value = '';
+  });
+}
+
+function addFiles(newFiles, arr, queueId, actionsId, countId) {
+  newFiles.forEach(f => {
+    const id = Date.now() + Math.random();
+    arr.push({ id, file: f, title: f.name.replace(/\.[^.]+$/, ''), course: '', desc: '', status: 'pending' });
+    renderFileItem(arr[arr.length - 1], arr, queueId, actionsId, countId);
+  });
+  updateQueueActions(arr, actionsId, countId);
+}
+
+function renderFileItem(item, arr, queueId, actionsId, countId) {
+  const queue = document.getElementById(queueId);
+  const div = document.createElement('div');
+  div.className = 'file-item';
+  div.id = 'fi-' + item.id;
+
+  const icon = item.file.type.startsWith('video/') ? `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>` : `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>`;
+
+  div.innerHTML = `
+    <div class="file-item-top">
+      <div class="file-icon">${icon}</div>
+      <div class="file-meta">
+        <div class="fname" title="${item.file.name}">${item.file.name}</div>
+        <div class="fsize">${fmtSize(item.file.size)}</div>
+      </div>
+      <button class="file-remove-btn" data-id="${item.id}" title="Remove">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="file-fields">
+      <div class="form-group">
+        <label>Title *</label>
+        <input type="text" class="fi-title" value="${item.title}" placeholder="Document title">
+      </div>
+      <div class="form-group">
+        <label>Course Name</label>
+        <input type="text" class="fi-course" value="${item.course}" placeholder="e.g. BIO 201">
+      </div>
+      <div class="form-group" style="grid-column:span 2">
+        <label>Description</label>
+        <input type="text" class="fi-desc" value="${item.desc}" placeholder="Brief description (optional)">
+      </div>
+    </div>
+    <div class="progress-wrap" style="display:none"><div class="progress-bar" id="pb-${item.id}"></div></div>
+    <div class="file-status" id="fs-${item.id}"></div>`;
+
+  div.querySelector('.file-remove-btn').addEventListener('click', () => {
+    const idx = arr.findIndex(x => x.id === item.id);
+    if (idx > -1) arr.splice(idx, 1);
+    div.remove();
+    updateQueueActions(arr, actionsId, countId);
+  });
+
+  div.querySelector('.fi-title').addEventListener('input', e => { item.title = e.target.value; });
+  div.querySelector('.fi-course').addEventListener('input', e => { item.course = e.target.value; });
+  div.querySelector('.fi-desc').addEventListener('input', e => { item.desc = e.target.value; });
+
+  queue.appendChild(div);
+}
+
+function updateQueueActions(arr, actionsId, countId) {
+  const actEl = document.getElementById(actionsId);
+  const cntEl = document.getElementById(countId);
+  if (arr.length > 0) {
+    actEl.style.display = 'flex'; actEl.style.flexWrap = 'wrap';
+    cntEl.textContent = arr.length + ' file' + (arr.length > 1 ? 's' : '') + ' in queue';
+  } else {
+    actEl.style.display = 'none';
+    cntEl.textContent = '';
+  }
+}
+
+setupDropZone('docDropZone','docFileInput', docFiles,'docQueue','docUploadActions','docQueueCount');
+
+async function uploadAll(arr, getShared, collection_name, refreshFn, btnId, countId) {
+  const btn = document.getElementById(btnId);
+  if (arr.length === 0) { toast('No files in queue', 'error'); return; }
+
+  const shared = getShared();
+  if (!shared) return;
+
+  btn.disabled = true;
+  let ok = 0, fail = 0;
+
+  for (const item of arr) {
+    if (item.status === 'done') continue;
+    const el    = document.getElementById('fi-' + item.id);
+    const pb    = document.getElementById('pb-' + item.id);
+    const fs    = document.getElementById('fs-' + item.id);
+    const pwrap = el.querySelector('.progress-wrap');
+
+    el.classList.remove('fail'); el.classList.add('uploading');
+    pwrap.style.display = 'block';
+    pb.style.width = '0%';
+    fs.className = 'file-status s-uploading';
+    fs.textContent = 'Uploading to Cloudinary…';
+
+    try {
+      const url = await cloudinaryUpload(item.file, pct => { pb.style.width = pct + '%'; });
+      pb.style.width = '100%';
+      fs.textContent = 'Saving to Firestore…';
+
+      const title = item.title.trim() || item.file.name;
+      await addDoc(collection(db, collection_name), {
+        title,
+        courseName: item.course.trim(),
+        description: item.desc.trim(),
+        fileUrl: url,
+        college: shared.college,
+        department: shared.dept,
+        level: shared.level,
+        semester: shared.semester,
+        createdAt: serverTimestamp()
+      });
+
+      item.status = 'done';
+      el.classList.remove('uploading'); el.classList.add('done');
+      fs.className = 'file-status s-done';
+      fs.textContent = '✓ Uploaded successfully';
+      ok++;
+    } catch(e) {
+      item.status = 'fail';
+      el.classList.remove('uploading'); el.classList.add('fail');
+      fs.className = 'file-status s-fail';
+      fs.textContent = '✕ ' + e.message;
+      fail++;
+    }
+  }
+
+  btn.disabled = false;
+  if (ok > 0) {
+    toast(`${ok} file${ok > 1 ? 's' : ''} uploaded successfully!`, 'success');
+    refreshFn();
+    loadOverviewStats();
+  }
+  if (fail > 0) toast(`${fail} file${fail > 1 ? 's' : ''} failed to upload.`, 'error');
+}
+
+function getDocShared() {
+  const college = document.getElementById('docCollege').value;
+  const dept    = document.getElementById('docDept').value;
+  const level   = document.getElementById('docLevel').value;
+  if (!college) { toast('Please select a College for the batch', 'error'); return null; }
+  if (!level)   { toast('Please select a Level for the batch', 'error'); return null; }
+  return { college, dept, level, semester: document.getElementById('docSemester').value };
+}
+
+window.uploadAllDocs = () => uploadAll(docFiles, getDocShared, 'Courses', loadDocs, 'docUploadAllBtn', 'docQueueCount');
+window.clearDocQueue = () => { docFiles.length = 0; document.getElementById('docQueue').innerHTML = ''; updateQueueActions(docFiles,'docUploadActions','docQueueCount'); };
+
+async function loadDocs() {
+  const tbody = document.getElementById('docsTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="8"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'Courses'), orderBy('createdAt','desc'), limit(100)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><p>No documents yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      return `<tr>
+        <td><div class="cell-title" title="${x.title||''}">${x.title||'—'}</div></td>
+        <td>${x.courseName||'—'}</td>
+        <td><span class="badge badge-pink">${x.college||'—'}</span></td>
+        <td style="max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${x.department||'—'}</td>
+        <td>${x.level||'—'}</td>
+        <td>${x.semester||'—'}</td>
+        <td>${fmtDate(x.createdAt)}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('Courses','${d.id}','${(x.title||'').replace(/'/g,'')}',loadDocs)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(e) { tbody.innerHTML = `<tr><td colspan="8" style="color:var(--error);text-align:center;padding:20px">${e.message}</td></tr>`; }
+}
+window.loadDocs = loadDocs;
+
+// ══════════════════════════════════════════════════════
+// ── VIDEOS ───────────────────────────────────────────
+// ══════════════════════════════════════════════════════
+let vidFiles = [];
+setupDropZone('vidDropZone','vidFileInput', vidFiles,'vidQueue','vidUploadActions','vidQueueCount');
+
+function getVidShared() {
+  const college = document.getElementById('vidCollege').value;
+  const level   = document.getElementById('vidLevel').value;
+  if (!college) { toast('Please select a College for the batch', 'error'); return null; }
+  if (!level)   { toast('Please select a Level for the batch', 'error'); return null; }
+  return { college, dept: document.getElementById('vidDept').value, level, semester: document.getElementById('vidSemester').value };
+}
+
+window.uploadAllVids = () => uploadAll(vidFiles, getVidShared, 'Videos', loadVids, 'vidUploadAllBtn', 'vidQueueCount');
+window.clearVidQueue = () => { vidFiles.length = 0; document.getElementById('vidQueue').innerHTML = ''; updateQueueActions(vidFiles,'vidUploadActions','vidQueueCount'); };
+
+async function loadVids() {
+  const tbody = document.getElementById('vidsTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="7"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'Videos'), orderBy('createdAt','desc'), limit(100)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="7"><div class="empty-state"><p>No videos yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      return `<tr>
+        <td><div class="cell-title" title="${x.title||''}">${x.title||'—'}</div></td>
+        <td>${x.courseName||'—'}</td>
+        <td><span class="badge badge-blue">${x.college||'—'}</span></td>
+        <td style="max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${x.department||'—'}</td>
+        <td>${x.level||'—'}</td>
+        <td>${fmtDate(x.createdAt)}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('Videos','${d.id}','${(x.title||'').replace(/'/g,'')}',loadVids)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(e) { tbody.innerHTML = `<tr><td colspan="7" style="color:var(--error);text-align:center;padding:20px">${e.message}</td></tr>`; }
+}
+window.loadVids = loadVids;
+
+// ══════════════════════════════════════════════════════
+// ── DEVOTIONALS ──────────────────────────────────────
+// ══════════════════════════════════════════════════════
+window.submitDevotional = async function(e) {
+  e.preventDefault();
+  const topic   = document.getElementById('devTopic').value.trim();
+  const text    = document.getElementById('devText').value.trim();
+  const creator = document.getElementById('devCreator').value.trim();
+  if (!topic || !text) { toast('Topic and text are required', 'error'); return; }
+
+  setLoading('devSubmitBtn','devBtnText','devBtnLoader', true);
+  try {
+    await addDoc(collection(db,'Devotional'), { topic, text, creatorName: creator, createdAt: serverTimestamp() });
+    toast('Devotional added successfully!');
+    document.getElementById('devForm').reset();
+    loadDevotionals(); loadOverviewStats();
+  } catch(err) { toast(err.message, 'error'); }
+  setLoading('devSubmitBtn','devBtnText','devBtnLoader', false);
+};
+
+async function loadDevotionals() {
+  const tbody = document.getElementById('devsTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'Devotional'), orderBy('createdAt','desc'), limit(50)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state"><p>No devotionals yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      return `<tr>
+        <td><div class="cell-title">${x.topic||'—'}</div></td>
+        <td>${x.creatorName||'—'}</td>
+        <td style="max-width:260px;color:var(--text-medium);font-size:13px">${truncate(x.text)}</td>
+        <td>${fmtDate(x.createdAt)}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('Devotional','${d.id}','${(x.topic||'').replace(/'/g,'')}',loadDevotionals)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(err) { tbody.innerHTML = `<tr><td colspan="5" style="color:var(--error);text-align:center;padding:20px">${err.message}</td></tr>`; }
+}
+window.loadDevotionals = loadDevotionals;
+
+// ══════════════════════════════════════════════════════
+// ── VERSE FOR THE DAY ────────────────────────────────
+// ══════════════════════════════════════════════════════
+window.submitVerse = async function(e) {
+  e.preventDefault();
+  const text  = document.getElementById('verseText').value.trim();
+  const ref   = document.getElementById('verseRef').value.trim();
+  const trans = document.getElementById('verseTrans').value;
+  if (!text || !ref) { toast('Verse text and reference are required', 'error'); return; }
+
+  setLoading('verseSubmitBtn','verseBtnText','verseBtnLoader', true);
+  try {
+    await addDoc(collection(db,'VerseForTheDay'), { text, reference: ref, translation: trans, createdAt: serverTimestamp() });
+    toast('Verse added!');
+    document.getElementById('verseForm').reset();
+    loadVerses(); loadOverviewStats();
+  } catch(err) { toast(err.message, 'error'); }
+  setLoading('verseSubmitBtn','verseBtnText','verseBtnLoader', false);
+};
+
+async function loadVerses() {
+  const tbody = document.getElementById('versesTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'VerseForTheDay'), orderBy('createdAt','desc'), limit(50)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state"><p>No verses yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      return `<tr>
+        <td style="font-weight:600;color:var(--primary)">${x.reference||'—'}</td>
+        <td><span class="badge badge-orange">${x.translation||'—'}</span></td>
+        <td style="max-width:300px;color:var(--text-medium);font-size:13px">${truncate(x.text)}</td>
+        <td>${fmtDate(x.createdAt)}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('VerseForTheDay','${d.id}','${(x.reference||'').replace(/'/g,'')}',loadVerses)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(err) { tbody.innerHTML = `<tr><td colspan="5" style="color:var(--error);text-align:center;padding:20px">${err.message}</td></tr>`; }
+}
+window.loadVerses = loadVerses;
+
+// ══════════════════════════════════════════════════════
+// ── ANNOUNCEMENTS ────────────────────────────────────
+// ══════════════════════════════════════════════════════
+window.submitAnnouncement = async function(e) {
+  e.preventDefault();
+  const title     = document.getElementById('annTitle').value.trim();
+  const message   = document.getElementById('annMessage').value.trim();
+  const published = document.getElementById('annPublished').checked;
+  if (!title || !message) { toast('Title and message are required', 'error'); return; }
+
+  setLoading('annSubmitBtn','annBtnText','annBtnLoader', true);
+  try {
+    await addDoc(collection(db,'announcements'), { title, message, isPublished: published, createdAt: serverTimestamp() });
+    toast('Announcement ' + (published ? 'published!' : 'saved as draft!'));
+    document.getElementById('annForm').reset();
+    document.getElementById('annPublished').checked = true;
+    loadAnnouncements(); loadOverviewStats();
+  } catch(err) { toast(err.message, 'error'); }
+  setLoading('annSubmitBtn','annBtnText','annBtnLoader', false);
+};
+
+async function loadAnnouncements() {
+  const tbody = document.getElementById('annTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="5"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'announcements'), orderBy('createdAt','desc'), limit(50)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="5"><div class="empty-state"><p>No announcements yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      const pub = x.isPublished;
+      return `<tr>
+        <td><div class="cell-title">${x.title||'—'}</div></td>
+        <td style="max-width:260px;color:var(--text-medium);font-size:13px">${truncate(x.message)}</td>
+        <td>
+          <span class="badge ${pub ? 'badge-green':'badge-gray'}">${pub ? 'Published':'Draft'}</span>
+          &nbsp;<button class="btn btn-sm btn-secondary" style="padding:4px 8px;font-size:11px"
+            onclick="togglePublish('announcements','${d.id}',${!pub},loadAnnouncements)">${pub ? 'Unpublish':'Publish'}</button>
+        </td>
+        <td>${fmtDate(x.createdAt)}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('announcements','${d.id}','${(x.title||'').replace(/'/g,'')}',loadAnnouncements)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(err) { tbody.innerHTML = `<tr><td colspan="5" style="color:var(--error);text-align:center;padding:20px">${err.message}</td></tr>`; }
+}
+window.loadAnnouncements = loadAnnouncements;
+
+// ══════════════════════════════════════════════════════
+// ── PROGRAMS ─────────────────────────────────────────
+// ══════════════════════════════════════════════════════
+let bannerFile = null;
+const bannerInput = document.getElementById('bannerInput');
+const bannerPreview = document.getElementById('bannerPreview');
+const bannerZone = document.getElementById('bannerZone');
+
+bannerInput.addEventListener('change', () => {
+  const f = bannerInput.files[0];
+  if (!f) return;
+  bannerFile = f;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    bannerPreview.innerHTML = `<img src="${ev.target.result}" alt="Banner Preview">`;
+    bannerPreview.style.display = 'block';
+    bannerZone.style.display = 'none';
+  };
+  reader.readAsDataURL(f);
+});
+
+window.submitProgram = async function(e) {
+  e.preventDefault();
+  const title     = document.getElementById('progTitle').value.trim();
+  const type      = document.getElementById('progType').value;
+  const location  = document.getElementById('progLocation').value.trim();
+  const date      = document.getElementById('progDate').value;
+  const startTime = document.getElementById('progStart').value;
+  const endTime   = document.getElementById('progEnd').value;
+  const desc      = document.getElementById('progDesc').value.trim();
+  const published = document.getElementById('progPublished').checked;
+
+  if (!title || !date) { toast('Title and Date are required', 'error'); return; }
+
+  setLoading('progSubmitBtn','progBtnText','progBtnLoader', true);
+
+  try {
+    let bannerUrl = '';
+    if (bannerFile) {
+      const statusEl = document.getElementById('progBtnText');
+      statusEl.textContent = 'Uploading banner…';
+      bannerUrl = await cloudinaryUpload(bannerFile, () => {});
+    }
+
+    await addDoc(collection(db,'programs'), {
+      title, type, location, date, startTime, endTime,
+      description: desc, bannerUrl, isPublished: published,
+      createdAt: serverTimestamp()
+    });
+
+    toast('Program saved successfully!');
+    document.getElementById('progForm').reset();
+    bannerFile = null;
+    bannerPreview.style.display = 'none';
+    bannerPreview.innerHTML = '';
+    bannerZone.style.display = '';
+    loadPrograms(); loadOverviewStats();
+  } catch(err) { toast(err.message, 'error'); }
+
+  setLoading('progSubmitBtn','progBtnText','progBtnLoader', false, 'Save Program');
+};
+
+async function loadPrograms() {
+  const tbody = document.getElementById('progsTableBody');
+  tbody.innerHTML = '<tr class="loading-row"><td colspan="6"><div class="spinner"></div></td></tr>';
+  try {
+    const snap = await getDocs(query(collection(db,'programs'), orderBy('createdAt','desc'), limit(50)));
+    if (snap.empty) { tbody.innerHTML = '<tr><td colspan="6"><div class="empty-state"><p>No programs yet</p></div></td></tr>'; return; }
+    tbody.innerHTML = snap.docs.map(d => {
+      const x = d.data();
+      const pub = x.isPublished;
+      return `<tr>
+        <td><div class="cell-title">${x.title||'—'}</div></td>
+        <td><span class="badge badge-blue">${x.type||'—'}</span></td>
+        <td>${x.date||'—'}</td>
+        <td>${x.location||'—'}</td>
+        <td>
+          <span class="badge ${pub ? 'badge-green':'badge-gray'}">${pub ? 'Published':'Draft'}</span>
+          &nbsp;<button class="btn btn-sm btn-secondary" style="padding:4px 8px;font-size:11px"
+            onclick="togglePublish('programs','${d.id}',${!pub},loadPrograms)">${pub ? 'Unpublish':'Publish'}</button>
+        </td>
+        <td><button class="btn btn-sm btn-danger" onclick="delItem('programs','${d.id}','${(x.title||'').replace(/'/g,'')}',loadPrograms)">Del</button></td>
+      </tr>`;
+    }).join('');
+  } catch(err) { tbody.innerHTML = `<tr><td colspan="6" style="color:var(--error);text-align:center;padding:20px">${err.message}</td></tr>`; }
+}
+window.loadPrograms = loadPrograms;
+
+// ── Shared helpers ────────────────────────────────────
+window.delItem = function(col, id, label, refreshFn) {
+  confirmDelete(`Delete "${label}" from ${col}? This cannot be undone.`, async () => {
+    try {
+      await deleteDoc(doc(db, col, id));
+      toast('Deleted successfully');
+      refreshFn(); loadOverviewStats();
+    } catch(e) { toast(e.message, 'error'); }
+  });
+};
+
+window.togglePublish = async function(col, id, newVal, refreshFn) {
+  try {
+    await updateDoc(doc(db, col, id), { isPublished: newVal });
+    toast(newVal ? 'Published!' : 'Unpublished', 'info');
+    refreshFn();
+  } catch(e) { toast(e.message, 'error'); }
+};
+
+function setLoading(btnId, textId, loaderId, loading, resetText) {
+  const btn = document.getElementById(btnId);
+  const txt = document.getElementById(textId);
+  const ldr = document.getElementById(loaderId);
+  btn.disabled = loading;
+  txt.style.display = loading ? 'none' : '';
+  ldr.classList.toggle('hidden', !loading);
+  if (!loading && resetText) txt.textContent = resetText;
+}
+</script>
+</body>
+</html>

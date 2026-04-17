@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification Channel ID -->
+    <string name="default_notification_channel_id">high_importance_channel</string>
+    <!-- Notification Channel Name -->
+    <string name="default_notification_channel_name">Important Notifications</string>
+</resources>
